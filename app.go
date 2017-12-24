@@ -6,7 +6,7 @@ import(
 )
 
 var now = time.Now()
-var election = time.Date(2016, time.November, 8, 0, 0, 0, 0, time.UTC)
+var election = time.Date(2018, time.January, 1, 0, 0, 0, 0, time.UTC)
 func main() {
 	//get duration between election date and now
 	tillElection := election.Sub(now)
@@ -24,6 +24,6 @@ func main() {
 	days := hours/24
 	hoursLeft := hours%24
 
-	fmt.Printf("\nHow long until the 2016 U.S. Presidential election?\n\n%v Days %v Hours %v Minutes %v Seconds\n\n", days, hoursLeft, minutes, seconds)
+	fmt.Printf("\nHow long until the 2018 New Year?\n\n%v Days %v Hours %v Minutes %v Seconds\n\n", days, hoursLeft, minutes, seconds)
 
 }
